@@ -2,6 +2,7 @@
 #include <zephyr/logging/log.h>
 #include <zephyr/bluetooth/conn.h>
 #include <zephyr/bluetooth/bluetooth.h>
+#include "light.h"
 
 #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
