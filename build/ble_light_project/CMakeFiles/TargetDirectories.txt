@@ -457,13 +457,6 @@ D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/se
 D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/services/CMakeFiles/install.dir
 D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/services/CMakeFiles/install/local.dir
 D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/services/CMakeFiles/install/strip.dir
-D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/CMakeFiles/subsys__bluetooth__crypto.dir
-D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/CMakeFiles/edit_cache.dir
-D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/CMakeFiles/rebuild_cache.dir
-D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/CMakeFiles/list_install_components.dir
-D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/CMakeFiles/install.dir
-D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/CMakeFiles/install/local.dir
-D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/CMakeFiles/install/strip.dir
 D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/lib/CMakeFiles/edit_cache.dir
 D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/lib/CMakeFiles/rebuild_cache.dir
 D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/lib/CMakeFiles/list_install_components.dir

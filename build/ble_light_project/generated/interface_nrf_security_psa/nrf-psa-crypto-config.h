@@ -11,7 +11,7 @@
 /* #undef MBEDTLS_PSA_CRYPTO_C */
 #define MBEDTLS_PSA_CRYPTO_CLIENT
 
-#define MBEDTLS_ASN1_PARSE_C
+/* #undef MBEDTLS_ASN1_PARSE_C */
 /* #undef MBEDTLS_ASN1_WRITE_C */
 #define MBEDTLS_BASE64_C
 /* #undef MBEDTLS_MD_C */
@@ -22,8 +22,8 @@
 /* #undef MBEDTLS_PEM_WRITE_C */
 #define MBEDTLS_PLATFORM_C
 #define MBEDTLS_PLATFORM_MEMORY
-#define MBEDTLS_PK_C
-#define MBEDTLS_PK_PARSE_C
+/* #undef MBEDTLS_PK_C */
+/* #undef MBEDTLS_PK_PARSE_C */
 /* #undef MBEDTLS_PK_WRITE_C */
 /* #undef MBEDTLS_PKCS5_C */
 #define MBEDTLS_THREADING_ALT
@@ -34,7 +34,7 @@
 /* #undef MBEDTLS_ECP_C */
 /* #undef MBEDTLS_ECP_NIST_OPTIM */
 /* #undef MBEDTLS_HAVE_ASM */
-#define MBEDTLS_SHA256_SMALLER
+/* #undef MBEDTLS_SHA256_SMALLER */
 
 #define PSA_WANT_AES_KEY_SIZE_128                          1
 #define PSA_WANT_AES_KEY_SIZE_192                          1
@@ -49,7 +49,7 @@
 #define PSA_WANT_ALG_CTR_DRBG                              1
 /* #undef PSA_WANT_ALG_DETERMINISTIC_ECDSA */
 #define PSA_WANT_ALG_ECB_NO_PADDING                        1
-#define PSA_WANT_ALG_ECDH                                  1
+/* #undef PSA_WANT_ALG_ECDH */
 /* #undef PSA_WANT_ALG_ECDSA */
 /* #undef PSA_WANT_ALG_ECDSA_ANY */
 /* #undef PSA_WANT_ALG_ED25519PH */
@@ -75,7 +75,7 @@
 /* #undef PSA_WANT_ALG_SHA3_512 */
 /* #undef PSA_WANT_ALG_SHA_1 */
 /* #undef PSA_WANT_ALG_SHA_224 */
-#define PSA_WANT_ALG_SHA_256                               1
+/* #undef PSA_WANT_ALG_SHA_256 */
 /* #undef PSA_WANT_ALG_SHA_384 */
 /* #undef PSA_WANT_ALG_SHA_512 */
 /* #undef PSA_WANT_ALG_SHA_512_224 */
@@ -101,7 +101,7 @@
 /* #undef PSA_WANT_ECC_SECP_K1_224 */
 /* #undef PSA_WANT_ECC_SECP_K1_256 */
 /* #undef PSA_WANT_ECC_SECP_R1_224 */
-#define PSA_WANT_ECC_SECP_R1_256                           1
+/* #undef PSA_WANT_ECC_SECP_R1_256 */
 /* #undef PSA_WANT_ECC_SECP_R1_384 */
 /* #undef PSA_WANT_ECC_SECP_R1_521 */
 /* #undef PSA_WANT_ECC_SECT_R1_233 */
@@ -114,12 +114,12 @@
 #define PSA_WANT_KEY_TYPE_AES                              1
 /* #undef PSA_WANT_KEY_TYPE_CHACHA20 */
 /* #undef PSA_WANT_KEY_TYPE_DERIVE */
-#define PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_BASIC               1
+/* #undef PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_BASIC */
 /* #undef PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_DERIVE */
-#define PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_EXPORT              1
-#define PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_GENERATE            1
-#define PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_IMPORT              1
-#define PSA_WANT_KEY_TYPE_ECC_PUBLIC_KEY                   1
+/* #undef PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_EXPORT */
+/* #undef PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_GENERATE */
+/* #undef PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_IMPORT */
+/* #undef PSA_WANT_KEY_TYPE_ECC_PUBLIC_KEY */
 /* #undef PSA_WANT_KEY_TYPE_HMAC */
 /* #undef PSA_WANT_KEY_TYPE_PASSWORD */
 /* #undef PSA_WANT_KEY_TYPE_PASSWORD_HASH */

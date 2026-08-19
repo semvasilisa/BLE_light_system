@@ -142,19 +142,22 @@
     "SB_CONFIG_PARTITION_MANAGER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      30
+    ]
   ],
   [
     "SB_CONFIG_BUILD_OUTPUT_BIN",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "D:/ncs/v3.4.0/nrf/modules/../sysbuild/Kconfig.sysbuild",
-      60
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      31
     ]
   ],
   [
@@ -162,10 +165,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "D:/ncs/v3.4.0/nrf/modules/../sysbuild/Kconfig.sysbuild",
-      68
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      32
     ]
   ],
   [
@@ -283,11 +286,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/../sysbuild\\Kconfig.netcore",
-      72
-    ]
+    "assign",
+    null
   ],
   [
     "SB_CONFIG_NETCORE_EMPTY",
@@ -333,17 +333,23 @@
     "SB_CONFIG_SECURE_BOOT_APPCORE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      58
+    ]
   ],
   [
     "SB_CONFIG_SECURE_BOOT_NETCORE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      59
+    ]
   ],
   [
     "SB_CONFIG_SUPPORT_QSPI_XIP",
@@ -361,35 +367,44 @@
     "y",
     "hex",
     "0x1000000",
-    "default",
+    "assign",
     [
-      "D:/ncs/v3.4.0/nrf/modules/../sysbuild\\Kconfig.bt_fast_pair",
-      12
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      67
     ]
   ],
   [
     "SB_CONFIG_BT_FAST_PAIR_ANTI_SPOOFING_PRIVATE_KEY",
     "y",
     "string",
-    null,
-    "unset",
-    null
+    "",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      68
+    ]
   ],
   [
     "SB_CONFIG_MATTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      71
+    ]
   ],
   [
     "SB_CONFIG_WIFI_NRF70",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      76
+    ]
   ],
   [
     "SB_CONFIG_APPROTECT_USE_UICR",
@@ -420,11 +435,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/../sysbuild\\Kconfig.approtect",
-      8
-    ]
+    "assign",
+    null
   ],
   [
     "SB_CONFIG_SECURE_APPROTECT_USE_UICR",
@@ -455,11 +467,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/../sysbuild\\Kconfig.approtect",
-      46
-    ]
+    "assign",
+    null
   ],
   [
     "SB_CONFIG_SUPPORT_FIRMWARE_LOADER_BLE_MCUMGR",
@@ -1015,19 +1024,22 @@
     "SB_CONFIG_WARN_EXPERIMENTAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      151
+    ]
   ],
   [
     "SB_CONFIG_WARN_DEPRECATED",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "D:/ncs/v3.4.0/zephyr/share/sysbuild/Kconfig",
-      66
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      152
     ]
   ],
   [
@@ -1057,11 +1069,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/zephyr/share/sysbuild\\images\\bootloader/Kconfig",
-      15
-    ]
+    "assign",
+    null
   ],
   [
     "SB_CONFIG_BOOTLOADER_MCUBOOT",
@@ -1086,16 +1095,22 @@
     "SB_CONFIG_COMPILER_WARNINGS_AS_ERRORS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      162
+    ]
   ],
   [
     "SB_CONFIG_MERGED_HEX_FILES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "D:/projects/ble_light_project/build/zephyr/.config",
+      163
+    ]
   ]
 ]

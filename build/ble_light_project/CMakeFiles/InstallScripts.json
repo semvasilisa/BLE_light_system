@@ -69,7 +69,6 @@
 		"D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/common/cmake_install.cmake",
 		"D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/host/cmake_install.cmake",
 		"D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/services/cmake_install.cmake",
-		"D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/cmake_install.cmake",
 		"D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/lib/cmake_install.cmake",
 		"D:/projects/ble_light_project/build/ble_light_project/zephyr/drivers/cmake_install.cmake",
 		"D:/projects/ble_light_project/build/ble_light_project/zephyr/drivers/disk/cmake_install.cmake",

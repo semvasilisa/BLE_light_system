@@ -1123,17 +1123,6 @@
     null
   ],
   [
-    "CONFIG_BT_AUTO_DATA_LEN_UPDATE",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
-      487
-    ]
-  ],
-  [
     "CONFIG_BT_TX_PROCESSOR_STACK_SIZE",
     "y",
     "int",
@@ -1789,22 +1778,22 @@
     "CONFIG_BT_BUF_ACL_RX_SIZE",
     "y",
     "int",
-    "69",
+    "27",
     "default",
     [
       "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\common\\Kconfig",
-      66
+      68
     ]
   ],
   [
     "CONFIG_BT_L2CAP_TX_MTU",
     "y",
     "int",
-    "65",
+    "23",
     "default",
     [
       "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig.l2cap",
-      32
+      40
     ]
   ],
   [
@@ -2213,14 +2202,6 @@
     ]
   ],
   [
-    "CONFIG_BT_NRF_CONN_SET_LTK",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_BT_GATT_POOL",
     "y",
     "bool",
@@ -2261,17 +2242,6 @@
     [
       "D:\\ncs\\v3.4.0\\zephyr\\kernel\\Kconfig",
       613
-    ]
-  ],
-  [
-    "CONFIG_BT_GATT_AUTO_SEC_REQ",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig.gatt",
-      100
     ]
   ],
   [
@@ -2577,12 +2547,9 @@
     "CONFIG_BT_DATA_LEN_UPDATE",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\Kconfig",
-      181
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_BT_EXT_ADV",
@@ -2799,76 +2766,6 @@
   ],
   [
     "CONFIG_BT_RPA_LOG_LEVEL_DEFAULT",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL_INHERIT",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\logging\\Kconfig.template.log_config_inherit",
-      16
-    ]
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL",
-    "n",
-    "int",
-    "3",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\logging\\Kconfig.template.log_config_inherit",
-      24
-    ]
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL_OFF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL_ERR",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL_WRN",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL_INF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL_DBG",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_CRYPTO_LOG_LEVEL_DEFAULT",
     "y",
     "bool",
     null,
@@ -3296,76 +3193,6 @@
     null
   ],
   [
-    "CONFIG_BT_SMP_LOG_LEVEL_INHERIT",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\logging\\Kconfig.template.log_config_inherit",
-      16
-    ]
-  ],
-  [
-    "CONFIG_BT_SMP_LOG_LEVEL",
-    "n",
-    "int",
-    "3",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\logging\\Kconfig.template.log_config_inherit",
-      24
-    ]
-  ],
-  [
-    "CONFIG_BT_SMP_LOG_LEVEL_OFF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_LOG_LEVEL_ERR",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_LOG_LEVEL_WRN",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_LOG_LEVEL_INF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_LOG_LEVEL_DBG",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_LOG_LEVEL_DEFAULT",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_BT_SERVICE_LOG_LEVEL_INHERIT",
     "y",
     "bool",
@@ -3569,16 +3396,6 @@
     null
   ],
   [
-    "CONFIG_BT_RPA",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "BT_SMP && BT_CONN && BT_HCI_HOST && BT_HCI && BT"
-    ]
-  ],
-  [
     "CONFIG_BT_ASSERT",
     "y",
     "bool",
@@ -3640,9 +3457,10 @@
     "y",
     "bool",
     "y",
-    "imply",
+    "default",
     [
-      "BT_ECC && BT_HCI_HOST && BT_HCI && BT"
+      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
+      9
     ]
   ],
   [
@@ -3894,14 +3712,6 @@
     null
   ],
   [
-    "CONFIG_BT_USER_DATA_LEN_UPDATE",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_BT_REMOTE_INFO",
     "y",
     "bool",
@@ -3913,199 +3723,11 @@
     "CONFIG_BT_SMP",
     "y",
     "bool",
-    "y",
+    "n",
     "assign",
     [
       "D:/projects/ble_light_project/prj.conf",
       5
-    ]
-  ],
-  [
-    "CONFIG_BT_SECURITY_ERR_TO_STR",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_ERR_TO_STR",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_PASSKEY_KEYPRESS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_PRIVACY",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SIGNING",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_APP_PAIRING_ACCEPT",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_SC_PAIR_ONLY",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
-      650
-    ]
-  ],
-  [
-    "CONFIG_BT_SMP_SC_ONLY",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_ALLOW_UNAUTH_OVERWRITE",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_ID_UNPAIR_MATCHING_BONDS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_ID_AUTO_SWAP_MATCHING_BONDS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_ID_ALLOW_UNAUTH_OVERWRITE",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_FIXED_PASSKEY",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_APP_PASSKEY",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_USE_DEBUG_KEYS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_BONDABLE",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
-      803
-    ]
-  ],
-  [
-    "CONFIG_BT_BONDING_REQUIRED",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_BONDABLE_PER_CONNECTION",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_STORE_DEBUG_KEYS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_ENFORCE_MITM",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
-      840
-    ]
-  ],
-  [
-    "CONFIG_BT_KEYS_OVERWRITE_OLDEST",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BT_SMP_MIN_ENC_KEY_SIZE",
-    "y",
-    "int",
-    "16",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
-      876
     ]
   ],
   [
@@ -4129,14 +3751,6 @@
       "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig.l2cap",
       18
     ]
-  ],
-  [
-    "CONFIG_BT_L2CAP_DYNAMIC_CHANNEL",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
   ],
   [
     "CONFIG_BT_L2CAP_SEG_RECV",
@@ -4193,17 +3807,6 @@
     [
       "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig.gatt",
       27
-    ]
-  ],
-  [
-    "CONFIG_BT_ATT_RETRY_ON_SEC_ERR",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig.gatt",
-      35
     ]
   ],
   [
@@ -4390,11 +3993,11 @@
     "CONFIG_BT_MAX_PAIRED",
     "y",
     "int",
-    "1",
+    "0",
     "default",
     [
       "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
-      889
+      888
     ]
   ],
   [
@@ -4499,16 +4102,6 @@
     null
   ],
   [
-    "CONFIG_BT_ECC",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "BT_SMP && !BT_SMP_OOB_LEGACY_PAIR_ONLY && BT_CONN && BT_HCI_HOST && BT_HCI && BT"
-    ]
-  ],
-  [
     "CONFIG_BT_HOST_CCM",
     "y",
     "bool",
@@ -4557,16 +4150,6 @@
     [
       "D:\\ncs\\v3.4.0\\zephyr\\subsys\\bluetooth\\host\\Kconfig",
       1229
-    ]
-  ],
-  [
-    "CONFIG_BT_CRYPTO",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "BT_SMP && BT_CONN && BT_HCI_HOST && BT_HCI && BT"
     ]
   ],
   [
@@ -5287,9 +4870,7 @@
     "y",
     "select",
     [
-      "BT_HOST_CRYPTO && BT_HCI_HOST && BT_HCI && BT",
-      "BT_ECC && BT_HCI_HOST && BT_HCI && BT",
-      "BT_CRYPTO && BT_HCI && BT"
+      "BT_HOST_CRYPTO && BT_HCI_HOST && BT_HCI && BT"
     ]
   ],
   [
@@ -5323,28 +4904,6 @@
     [
       "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.psa.nordic",
       54
-    ]
-  ],
-  [
-    "CONFIG_PSA_HAS_HASH_SUPPORT",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.psa.nordic",
-      67
-    ]
-  ],
-  [
-    "CONFIG_PSA_HAS_KEY_AGREEMENT",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.psa.nordic",
-      90
     ]
   ],
   [
@@ -5569,8 +5128,7 @@
     "select",
     [
       "BT_HOST_CRYPTO && BT_HCI_HOST && BT_HCI && BT",
-      "BT_GATT_CACHING && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT",
-      "BT_CRYPTO && BT_HCI && BT"
+      "BT_GATT_CACHING && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT"
     ]
   ],
   [
@@ -6067,31 +5625,25 @@
     "CONFIG_PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_IMPORT",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "BT_ECC && BT_HCI_HOST && BT_HCI && BT"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_EXPORT",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "BT_ECC && BT_HCI_HOST && BT_HCI && BT"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_GENERATE",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "BT_ECC && BT_HCI_HOST && BT_HCI && BT"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_DERIVE",
@@ -6134,119 +5686,7 @@
     null
   ],
   [
-    "CONFIG_MBEDTLS_X509_LIBRARY",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      14
-    ]
-  ],
-  [
     "CONFIG_MBEDTLS_X509_USE_C",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      20
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CREATE_C",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CHECK_KEY_USAGE",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      33
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CHECK_EXTENDED_KEY_USAGE",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      39
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CRL_PARSE_C",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      45
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CSR_PARSE_C",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      51
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CRT_PARSE_C",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      57
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CSR_WRITE_C",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_CRT_WRITE_C",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_MBEDTLS_X509_REMOVE_INFO",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\Kconfig.tls",
-      74
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_PKCS7_C",
     "y",
     "bool",
     null,
@@ -6301,11 +5741,9 @@
     "CONFIG_MBEDTLS_ASN1_PARSE_C",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "MBEDTLS_X509_USE_C && !MBEDTLS && NRF_SECURITY"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_MBEDTLS_THREADING_C",
@@ -6377,11 +5815,9 @@
     "CONFIG_MBEDTLS_PK_C",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "MBEDTLS_X509_LIBRARY && NRF_SECURITY"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_TF_PSA_CRYPTO_USER_CONFIG",
@@ -6393,14 +5829,6 @@
       "D:/ncs/v3.4.0/zephyr/modules/mbedtls/Kconfig.tf-psa-crypto",
       19
     ]
-  ],
-  [
-    "CONFIG_MBEDTLS_ECP_NIST_OPTIM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
   ],
   [
     "CONFIG_MBEDTLS_CIPHER_ALL_ENABLED",
@@ -6439,8 +5867,7 @@
     "y",
     "imply",
     [
-      "BT_GATT_CACHING && MBEDTLS_PSA_CRYPTO_C && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT",
-      "BT_CRYPTO && MBEDTLS_PSA_CRYPTO_C && BT_HCI && BT"
+      "BT_GATT_CACHING && MBEDTLS_PSA_CRYPTO_C && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT"
     ]
   ],
   [
@@ -6461,17 +5888,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_MBEDTLS_SHA256_SMALLER",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/zephyr/modules/mbedtls/Kconfig.tf-psa-crypto",
-      82
-    ]
   ],
   [
     "CONFIG_MBEDTLS_CTR_DRBG_C",
@@ -6575,12 +5991,9 @@
     "CONFIG_MBEDTLS_PK_PARSE_C",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "MBEDTLS_X509_USE_C && MBEDTLS_X509_LIBRARY && NRF_SECURITY",
-      "MBEDTLS_X509_USE_C && !MBEDTLS && NRF_SECURITY"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_MBEDTLS_PK_WRITE_C",
@@ -6659,16 +6072,6 @@
   ],
   [
     "CONFIG_MBEDTLS_PSA_P256M_DRIVER_ENABLED",
-    "y",
-    "bool",
-    "y",
-    "imply",
-    [
-      "BT_ECC && MBEDTLS_PSA_CRYPTO_C && BT_HCI_HOST && BT_HCI && BT"
-    ]
-  ],
-  [
-    "CONFIG_MBEDTLS_PSA_P256M_DRIVER_RAW",
     "y",
     "bool",
     null,
@@ -6948,204 +6351,6 @@
     [
       "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
       121
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_ECDH_SECP_R1_256",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      140
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_ECDH",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      176
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_AGREEMENT_DRIVER",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      187
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_SHA_256",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      408
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_HASH_DRIVER",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      484
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_PUBLIC_KEY_SECP_R1_256",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      531
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_IMPORT_SECP_R1_256",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      537
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_EXPORT_SECP_R1_256",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      543
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_GENERATE_SECP_R1_256",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      549
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_PUBLIC_KEY_SECP",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      828
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_IMPORT_SECP",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      837
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_EXPORT_SECP",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      846
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_GENERATE_SECP",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      855
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_PUBLIC_KEY",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      983
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_IMPORT",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      990
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_EXPORT",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      997
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_TYPE_ECC_KEY_PAIR_GENERATE",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      1004
-    ]
-  ],
-  [
-    "CONFIG_PSA_NEED_OBERON_KEY_MANAGEMENT_DRIVER",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/nrf/modules/..\\subsys\\nrf_security\\src/drivers\\nrf_oberon/Kconfig",
-      1163
     ]
   ],
   [
@@ -8177,8 +7382,7 @@
     "y",
     "select",
     [
-      "BT_GATT_CACHING && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT",
-      "BT_CRYPTO && BT_HCI && BT"
+      "BT_GATT_CACHING && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT"
     ]
   ],
   [
@@ -8201,11 +7405,9 @@
     "CONFIG_PSA_WANT_ALG_ECDH",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "BT_ECC && BT_HCI_HOST && BT_HCI && BT"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PSA_WANT_ALG_ECDSA",
@@ -8331,11 +7533,9 @@
     "CONFIG_PSA_WANT_ALG_SHA_256",
     "y",
     "bool",
-    "y",
-    "imply",
-    [
-      "MBEDTLS_PSA_P256M_DRIVER_ENABLED && MBEDTLS_PSA_CRYPTO_C && !MBEDTLS && NRF_SECURITY"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PSA_WANT_ALG_SHA_384",
@@ -8402,14 +7602,6 @@
     null
   ],
   [
-    "CONFIG_PSA_WANT_ALG_TLS12_ECJPAKE_TO_PMS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_PSA_WANT_ECC_BRAINPOOL_P_R1_256",
     "y",
     "bool",
@@ -8461,11 +7653,9 @@
     "CONFIG_PSA_WANT_ECC_SECP_R1_256",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "BT_ECC && BT_HCI_HOST && BT_HCI && BT"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PSA_WANT_ECC_SECP_R1_384",
@@ -8523,8 +7713,7 @@
     "select",
     [
       "BT_HOST_CRYPTO && BT_HCI_HOST && BT_HCI && BT",
-      "BT_GATT_CACHING && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT",
-      "BT_CRYPTO && BT_HCI && BT"
+      "BT_GATT_CACHING && BT_GATT_SERVICE_CHANGED && PSA_CRYPTO && BT_CONN && BT_HCI_HOST && BT_HCI && BT"
     ]
   ],
   [
@@ -8539,13 +7728,9 @@
     "CONFIG_PSA_WANT_KEY_TYPE_ECC_PUBLIC_KEY",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_IMPORT",
-      "PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_EXPORT",
-      "PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_GENERATE"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PSA_WANT_KEY_TYPE_RAW_DATA",
@@ -8570,17 +7755,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_PSA_WANT_KEY_TYPE_ECC_KEY_PAIR_BASIC",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/ncs/v3.4.0/zephyr/modules/mbedtls\\Kconfig.psa.logic",
-      38
-    ]
   ],
   [
     "CONFIG_ZEPHYR_OBERON_PSA_CRYPTO_MODULE",

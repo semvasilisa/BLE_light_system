@@ -54,11 +54,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/crypto/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("D:/projects/ble_light_project/build/ble_light_project/zephyr/subsys/bluetooth/lib/cmake_install.cmake")
 endif()
 

@@ -6365,3 +6365,467 @@ events:
         - "C:\\Users\\Professional\\AppData\\Roaming\\npm"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Zephyr-Kernel"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/FindPython/Support.cmake:2437 (find_program)"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/FindPython3.cmake:671 (include)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/python.cmake:41 (find_package)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    mode: "program"
+    variable: "_Python3_EXECUTABLE_DEBUG"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.15_d"
+      - "python3.14_d"
+      - "python3.13_d"
+      - "python3.12_d"
+      - "python3_d"
+      - "python_d"
+    candidate_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/"
+    searched_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\ncs\\toolchains\\dcbdc366a1"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\mingw64\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin\\Scripts"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\nanopb\\generator-bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\nrfutil\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\riscv64-zephyr-elf\\bin"
+        - "c:\\Users\\Professional\\.vscode\\extensions\\nordic-semiconductor.nrf-connect-2026.8.2347-win32-x64\\platform\\nrfutil\\lib\\nrfutil-sdk-manager"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\sqlite"
+        - "D:\\Soft\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\Professional\\.local\\bin"
+        - "C:\\Users\\Professional\\AppData\\Local\\Python\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\Soft\\visualstudio\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Professional\\AppData\\Roaming\\npm"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Zephyr-Kernel"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/ncs/v3.4.0/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/zephyr_default.cmake:145 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/"
+    searched_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.com"
+    found: "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/qemu"
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/qemu-arc"
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/openocd"
+      ENV{PATH}:
+        - "C:\\ncs\\toolchains\\dcbdc366a1"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\mingw64\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin\\Scripts"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\nanopb\\generator-bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\nrfutil\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\riscv64-zephyr-elf\\bin"
+        - "c:\\Users\\Professional\\.vscode\\extensions\\nordic-semiconductor.nrf-connect-2026.8.2347-win32-x64\\platform\\nrfutil\\lib\\nrfutil-sdk-manager"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\sqlite"
+        - "D:\\Soft\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\Professional\\.local\\bin"
+        - "C:\\Users\\Professional\\AppData\\Local\\Python\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\Soft\\visualstudio\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Professional\\AppData\\Roaming\\npm"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Zephyr-Kernel"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "D:/ncs/v3.4.0/zephyr/CMakeLists.txt:634 (zephyr_cc_option)"
+    directories:
+      source: "D:/projects/ble_light_project/build/ble_light_project/CMakeFiles/CMakeScratch/TryCompile-jd6l8e"
+      binary: "D:/projects/ble_light_project/build/ble_light_project/CMakeFiles/CMakeScratch/TryCompile-jd6l8e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ncs/v3.4.0/nrf/cmake/modules;D:/ncs/v3.4.0/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map_D__projects_ble_light_project_CMAKE_SOURCE_DIR_C__c__nostartfiles__nostdlib__isystem__C__ncs_toolchains_dcbdc366a1_opt_zephyr_sdk_gnu_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_14_3_0_include___isystem__C__ncs_toolchains_dcbdc366a1_opt_zephyr_sdk_gnu_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_14_3_0_include___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/projects/ble_light_project/build/ble_light_project/CMakeFiles/CMakeScratch/TryCompile-jd6l8e'
+        
+        Run Build Command(s): C:/ncs/toolchains/dcbdc366a1/opt/bin/ninja.exe -v cmTC_e9c49
+        [1/2] C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin\\arm-zephyr-eabi-gcc.exe -Dcheck_fmacro_prefix_map_D__projects_ble_light_project_CMAKE_SOURCE_DIR_C__c__nostartfiles__nostdlib__isystem__C__ncs_toolchains_dcbdc366a1_opt_zephyr_sdk_gnu_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_14_3_0_include___isystem__C__ncs_toolchains_dcbdc366a1_opt_zephyr_sdk_gnu_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_14_3_0_include___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd  -c -nostartfiles -nostdlib -isystem "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd   -fmacro-prefix-map=D:/projects/ble_light_project=CMAKE_SOURCE_DIR -o CMakeFiles/cmTC_e9c49.dir/src.c.obj -c D:/projects/ble_light_project/build/ble_light_project/CMakeFiles/CMakeScratch/TryCompile-jd6l8e/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin\\arm-zephyr-eabi-gcc.exe -c -nostartfiles -nostdlib -isystem "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd  CMakeFiles/cmTC_e9c49.dir/src.c.obj -o cmTC_e9c49   && cd ."
+        arm-zephyr-eabi-gcc.exe: warning: CMakeFiles/cmTC_e9c49.dir/src.c.obj: linker input file unused because linking not done
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/FindPython/Support.cmake:2437 (find_program)"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/FindPython3.cmake:671 (include)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/python.cmake:41 (find_package)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    mode: "program"
+    variable: "_Python3_EXECUTABLE_DEBUG"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.15_d"
+      - "python3.14_d"
+      - "python3.13_d"
+      - "python3.12_d"
+      - "python3_d"
+      - "python_d"
+    candidate_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/"
+    searched_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\ncs\\toolchains\\dcbdc366a1"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\mingw64\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin\\Scripts"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\nanopb\\generator-bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\nrfutil\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\riscv64-zephyr-elf\\bin"
+        - "c:\\Users\\Professional\\.vscode\\extensions\\nordic-semiconductor.nrf-connect-2026.8.2347-win32-x64\\platform\\nrfutil\\lib\\nrfutil-sdk-manager"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\sqlite"
+        - "D:\\Soft\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\Professional\\.local\\bin"
+        - "C:\\Users\\Professional\\AppData\\Local\\Python\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\Soft\\visualstudio\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Professional\\AppData\\Roaming\\npm"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Zephyr-Kernel"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/ncs/v3.4.0/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/zephyr_default.cmake:145 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/"
+    searched_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.com"
+    found: "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/qemu"
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/qemu-arc"
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/openocd"
+      ENV{PATH}:
+        - "C:\\ncs\\toolchains\\dcbdc366a1"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\mingw64\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin\\Scripts"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\nanopb\\generator-bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\nrfutil\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\riscv64-zephyr-elf\\bin"
+        - "c:\\Users\\Professional\\.vscode\\extensions\\nordic-semiconductor.nrf-connect-2026.8.2347-win32-x64\\platform\\nrfutil\\lib\\nrfutil-sdk-manager"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\sqlite"
+        - "D:\\Soft\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\Professional\\.local\\bin"
+        - "C:\\Users\\Professional\\AppData\\Local\\Python\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\Soft\\visualstudio\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Professional\\AppData\\Roaming\\npm"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Zephyr-Kernel"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/FindPython/Support.cmake:2437 (find_program)"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/share/cmake-4.2/Modules/FindPython3.cmake:671 (include)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/python.cmake:41 (find_package)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    mode: "program"
+    variable: "_Python3_EXECUTABLE_DEBUG"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.15_d"
+      - "python3.14_d"
+      - "python3.13_d"
+      - "python3.12_d"
+      - "python3_d"
+      - "python_d"
+    candidate_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/"
+    searched_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.15_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.14_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.13_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3.12_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python3_d"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d.com"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d.exe"
+      - "C:/ncs/toolchains/dcbdc366a1/opt/bin/python_d"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\ncs\\toolchains\\dcbdc366a1"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\mingw64\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin\\Scripts"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\nanopb\\generator-bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\nrfutil\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\riscv64-zephyr-elf\\bin"
+        - "c:\\Users\\Professional\\.vscode\\extensions\\nordic-semiconductor.nrf-connect-2026.8.2347-win32-x64\\platform\\nrfutil\\lib\\nrfutil-sdk-manager"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\sqlite"
+        - "D:\\Soft\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\Professional\\.local\\bin"
+        - "C:\\Users\\Professional\\AppData\\Local\\Python\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\Soft\\visualstudio\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Professional\\AppData\\Roaming\\npm"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Zephyr-Kernel"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/ncs/v3.4.0/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "D:/ncs/v3.4.0/zephyr/cmake/modules/zephyr_default.cmake:145 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "D:/ncs/v3.4.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/"
+    searched_directories:
+      - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.com"
+    found: "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/qemu"
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/qemu-arc"
+        - "C:/ncs/toolchains/dcbdc366a1/opt/zephyr-sdk/hosttools/openocd"
+      ENV{PATH}:
+        - "C:\\ncs\\toolchains\\dcbdc366a1"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\mingw64\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\bin\\Scripts"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\nanopb\\generator-bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\nrfutil\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin"
+        - "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\riscv64-zephyr-elf\\bin"
+        - "c:\\Users\\Professional\\.vscode\\extensions\\nordic-semiconductor.nrf-connect-2026.8.2347-win32-x64\\platform\\nrfutil\\lib\\nrfutil-sdk-manager"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\sqlite"
+        - "D:\\Soft\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\Professional\\.local\\bin"
+        - "C:\\Users\\Professional\\AppData\\Local\\Python\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\Soft\\visualstudio\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Professional\\AppData\\Roaming\\npm"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Zephyr-Kernel"
+...
