@@ -1,0 +1,7 @@
+default: ble_light_project
+build_dir: D:/projects/ble_light_project/build
+domains:
+  - name: ble_light_project
+    build_dir: D:/projects/ble_light_project/build/ble_light_project
+flash_order:
+  - ble_light_project

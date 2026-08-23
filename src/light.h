@@ -29,4 +29,6 @@
 #define BT_UUID_SMARTLIGHT_MODE       BT_UUID_DECLARE_128(BT_UUID_SMARTLIGHT_MODE_VAL)
 #define BT_UUID_SMARTLIGHT_STATUS     BT_UUID_DECLARE_128(BT_UUID_SMARTLIGHT_STATUS_VAL)
 
+void button_changed(uint32_t button_state, uint32_t has_changed);
+
 #endif /* LIGHT_H_ */

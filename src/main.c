@@ -1,6 +1,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 #include <zephyr/bluetooth/conn.h>
+#include <dk_buttons_and_leds.h>
 #include <zephyr/bluetooth/bluetooth.h>
 #include "light.h"
 
@@ -22,6 +23,8 @@ static const struct bt_le_adv_param *adv_param =
                      401,  // max advertising interval: 401 * 0.625ms = 250.625 ms
                      NULL); // no specific device is targeted (undirected) 
 
+struct bt_conn *current_conn;
+
 // a device is connected, get info about this connection
 static void connected(struct bt_conn *conn, uint8_t err) // conn tells which BLE connection
 {
@@ -31,6 +34,7 @@ static void connected(struct bt_conn *conn, uint8_t err) // conn tells which BLE
     }
 
     LOG_INF("Connected\n");
+    current_conn = bt_conn_ref(conn);
 
     struct bt_conn_info info; // all info about the connection 
     err = bt_conn_get_info(conn, &info);
@@ -51,6 +55,10 @@ static void disconnected(struct bt_conn *conn, uint8_t reason)
 {
     LOG_INF("Disconnected (reason %u)\n", reason);
 
+    if (current_conn) {
+        bt_conn_unref(current_conn);
+        current_conn = NULL;
+    }
     // restart advertising after disconnection
     // int err = bt_le_adv_start(adv_param, ad, ARRAY_SIZE(ad), NULL, 0);
     // if (err) {
@@ -78,6 +86,18 @@ static struct bt_conn_cb connection_callbacks = {
 int main(void)
 {
     int err;
+
+    err = dk_leds_init(); // preprare the board's led so that they could be used by the program
+    if (err) {
+        LOG_ERR("LEDs init failed (err %d)\n", err);
+        return err;
+    }
+
+    err = dk_buttons_init(button_changed);
+    if (err) {
+        LOG_ERR("Buttons init failed (err %d)\n", err);
+        return err;
+    }
 
     err = bt_enable(NULL); // starts the ble host
     if (err) {
