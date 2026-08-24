@@ -1,0 +1,13 @@
+# Target labels
+ ble_light_project
+# Source files and their labels
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/CMakeFiles/ble_light_project
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/CMakeFiles/ble_light_project.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/CMakeFiles/ble_light_project-complete.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/ble_light_project-prefix/src/ble_light_project-stamp/ble_light_project-build.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/ble_light_project-prefix/src/ble_light_project-stamp/ble_light_project-configure.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/ble_light_project-prefix/src/ble_light_project-stamp/ble_light_project-download.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/ble_light_project-prefix/src/ble_light_project-stamp/ble_light_project-install.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/ble_light_project-prefix/src/ble_light_project-stamp/ble_light_project-mkdir.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/ble_light_project-prefix/src/ble_light_project-stamp/ble_light_project-patch.rule
+D:/projects/ble_light_project/build/_sysbuild/sysbuild/images/ble_light_project-prefix/src/ble_light_project-stamp/ble_light_project-update.rule

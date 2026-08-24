@@ -22,8 +22,30 @@ struct light_state {
 
 static struct light_state light_state;
 
+static bool led_is_on = false;
+
+void toggle_light_led(void)
+{
+    if (led_is_on) {
+        dk_set_led_off(LIGHT_LED);
+        led_is_on = false;
+    } else {
+        dk_set_led_on(LIGHT_LED);
+        led_is_on = true;
+    }
+}
+
+static void led_timer_expiry(struct k_timer *timer)
+{
+    toggle_light_led();
+}
+
+K_TIMER_DEFINE(led_timer, led_timer_expiry, NULL);
+
 static void apply_light_state(void)
 {
+    k_timer_stop(&led_timer);
+
     if (!light_state.power) {
         dk_set_led_off(LIGHT_LED);
         return;
@@ -33,7 +55,13 @@ static void apply_light_state(void)
     if (light_state.mode == 0) {
         dk_set_led_on(LIGHT_LED);
     }
-    /* mode == 1 (slow blink) and mode == 2 (fast blink) come in Step 5 */
+   
+    if (light_state.mode == 1) {
+        k_timer_start(&led_timer, K_MSEC(1000), K_MSEC(1000));
+    }
+    else if (light_state.mode == 2) {
+        k_timer_start(&led_timer, K_MSEC(500), K_MSEC(500));
+    }
 }
 
 static ssize_t write_power(struct bt_conn *conn, const struct bt_gatt_attr *attr,
@@ -114,7 +142,7 @@ BT_GATT_SERVICE_DEFINE(smart_light_svc,
 
     BT_GATT_CHARACTERISTIC(BT_UUID_SMARTLIGHT_POWER,
         BT_GATT_CHRC_WRITE,
-        BT_GATT_PERM_WRITE,
+        BT_GATT_PERM_WRITE_AUTHEN,
         NULL, write_power, NULL),
 
     BT_GATT_CHARACTERISTIC(BT_UUID_SMARTLIGHT_BRIGHTNESS,
