@@ -40,6 +40,12 @@ the board is visible in nRF Connect for Mobile with a **Connect** button,
 confirming it's connectable — though connecting isn't yet possible, since
 connection callbacks haven't been implemented.
 
+```
+[00:00:00.470,306] <inf> main: Bluetooth initialized
+
+Advertising successfully started as SmartLight
+```
+
 ---
 
 ## Phase 2 — Connection Handling
@@ -68,6 +74,19 @@ struct bt_conn_cb connection_callbacks = {
 Once these callbacks are implemented, connecting and disconnecting work
 as expected, and the board automatically resumes advertising after a
 disconnect.
+
+```
+[00:00:00.467,041] <inf> main: Bluetooth initialized
+
+Advertising successfully started as SmartLight
+[00:01:37.478,149] <inf> main: Connected
+
+[00:01:37.478,179] <inf> main: Connection interval: 24 units (30 ms)
+
+[00:01:37.478,179] <inf> main: Peripheral latency: 0
+
+[00:01:37.478,210] <inf> main: Supervision timeout: 72 units (720 ms)
+```
 
 ---
 
@@ -271,3 +290,23 @@ permitted.
 Power, the BLE Host requests pairing. The passkey is printed on the
 board's serial terminal; once entered on the phone, the connection becomes
 encrypted, and characteristic values can be written successfully.
+
+```
+[00:00:00.467,041] <inf> main: Bluetooth initialized
+
+Advertising successfully started as SmartLight
+[00:01:37.478,149] <inf> main: Connected
+
+[00:01:37.478,179] <inf> main: Connection interval: 24 units (30 ms)
+
+[00:01:37.478,179] <inf> main: Peripheral latency: 0
+
+[00:01:37.478,210] <inf> main: Supervision timeout: 72 units (720 ms)
+
+[00:01:42.358,093] <inf> main: Passkey for 55:4F:E0:F1:C2:2A (random): 073913
+
+[00:01:53.524,230] <inf> main: Security changed: 55:4F:E0:F1:C2:2A (random) level 4
+
+[00:01:53.586,059] <inf> light: Power set to 1
+```
+
