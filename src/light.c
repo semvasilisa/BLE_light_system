@@ -2,12 +2,15 @@
 #include <zephyr/logging/log.h>
 #include <zephyr/bluetooth/gatt.h>
 #include <zephyr/bluetooth/uuid.h>
+#include <zephyr/drivers/pwm.h>
 #include <dk_buttons_and_leds.h>
 #include "light.h"
 
 LOG_MODULE_REGISTER(light, LOG_LEVEL_INF);
 
 #define LIGHT_LED DK_LED1
+
+static const struct pwm_dt_spec led_pwm = PWM_DT_SPEC_GET(DT_ALIAS(pwm_led0));
 
 extern struct bt_conn *current_conn;
 
@@ -20,17 +23,39 @@ struct light_state {
     uint8_t mode;        // 0 = steady, 1 = slow blink, 2 = fast blink 
 };
 
-static struct light_state light_state;
+static struct light_state light_state = {
+    .power = 0,
+    .brightness = 255,
+    .mode = 0,
+};
 
 static bool led_is_on = false;
+
+void apply_brightness(void){
+    
+    uint32_t pulse_width = ((uint64_t)light_state.brightness * led_pwm.period) / 255;
+
+    int err = pwm_set_pulse_dt(&led_pwm, pulse_width);
+    if (err) {
+        LOG_WRN("Failed to set brightness (err %d)", err);
+    }
+}
+
+void apply_led_off(void)
+{
+    int err = pwm_set_pulse_dt(&led_pwm, 0);
+    if (err) {
+        LOG_WRN("Failed to turn off LED (err %d)", err);
+    }
+}
 
 void toggle_light_led(void)
 {
     if (led_is_on) {
-        dk_set_led_off(LIGHT_LED);
+        apply_led_off();
         led_is_on = false;
     } else {
-        dk_set_led_on(LIGHT_LED);
+        apply_brightness();
         led_is_on = true;
     }
 }
@@ -47,13 +72,13 @@ static void apply_light_state(void)
     k_timer_stop(&led_timer);
 
     if (!light_state.power) {
-        dk_set_led_off(LIGHT_LED);
+        apply_led_off();
         return;
     }
 
-    /* Power is on. For now (steady mode logic only): */
+    /* Power is on */
     if (light_state.mode == 0) {
-        dk_set_led_on(LIGHT_LED);
+        apply_brightness();
     }
    
     if (light_state.mode == 1) {
